@@ -6,13 +6,16 @@
 
 
 
-
+body{
+    height: 1300px;
+}
 
 #main_title{
     text-align: center;
     color: rgb(255, 184, 91);
     font-size: 60px;
     text-shadow: 5px 5px rgb(171, 171, 171);
+    animation: fadein 2s;
 }
 #main_title:hover{
     font-size: 65px;
@@ -23,6 +26,7 @@
 #clk_message{
     font-weight: bold;
     font-size: 20px;
+    animation: fadein 4s;
 }
 
 #circle{
@@ -31,6 +35,7 @@
     height: 300px;
     border-radius: 50%;
     order: 1;
+    animation: fadein 4s;
 }
 
 #img{
@@ -39,8 +44,15 @@
     border-radius: 50%;
     order: 2;
     box-shadow: 7px 7px rgb(145, 145, 145);
+    animation: fadein 4s;
 }
 #circle:hover{
+    width: 350px;
+    height: 350px;
+    
+    transition: ease-in-out 0.5s;
+}
+#circle:focus{
     width: 350px;
     height: 350px;
     
@@ -50,7 +62,10 @@
     box-shadow: 12px 12px rgb(181, 181, 181);
     transition: ease-in-out 0.5s;
 }
-
+#img:focus{
+    box-shadow: 12px 12px rgb(181, 181, 181);
+    transition: ease-in-out 0.5s;
+}
 #top{
     height: 100px;
 }
@@ -81,14 +96,16 @@
     height: 100px;
 }
 #time_text{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
+    animation: fadein 6s;
 }
 
 #clock{
-    font-size: 100px;
+    font-size: 70px;
     color:rgb(255, 184, 91);
     text-shadow: 5px 5px rgb(171, 171, 171);
+    animation: fadein 6s;
 }
 #clock_div_div{
 
@@ -96,4 +113,16 @@
     align-items: center;
     justify-content: center;
     height: 100px;
+}
+
+
+
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

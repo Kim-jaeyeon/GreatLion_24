@@ -1,5 +1,4 @@
 var clock=document.getElementById("clock");
-
 function getTime(){
     var timeInfo=new Date();
     var hour=String(timeInfo.getHours()).padStart(2,'0');
@@ -11,3 +10,4 @@ function getTime(){
 }
 getTime();
 setInterval(getTime,1000);
+

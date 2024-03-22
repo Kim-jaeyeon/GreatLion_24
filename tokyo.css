@@ -1,0 +1,86 @@
+body{
+    height: 3000px;
+}
+
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px; 
+}
+#title_div{
+    margin-top: -80px;
+    animation: fadein 2s;
+}
+#back_div{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 80%;
+    margin-left: 20px;
+    margin-bottom: 52px;
+}
+#back_div i{
+    font-size: 30px;
+}
+#back_div i:hover{
+    font-size: 35px;
+    transition: ease-in-out 0.5s;
+}
+
+
+
+
+
+
+
+
+#mid{
+    width: 100%;
+    height: 850vh;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    
+}
+#photo1_div,#photo2_div,#photo3_div,#photo4_div,#photo5_div,#photo6_div,#photo7_div,#photo8_div,#photo9_div,#photo10_div,#photo11_div,#photo12_div,#photo13_div,#photo14_div,#photo15_div,#photo16_div,#photo17_div,#photo18_div,#photo19_div,#photo20_div{
+    margin: 20px;
+    width: 300px;
+    height: 450px;
+   
+}
+#photo1_div img,#photo2_div img,#photo3_div img,#photo4_div img,#photo5_div img,#photo6_div img,#photo7_div img,#photo8_div img,#photo9_div img,#photo10_div img,#photo11_div img,#photo12_div img,#photo13_div img,#photo14_div img,#photo15_div img,#photo16_div img,#photo17_div img,#photo18_div img,#photo19_div img,#photo20_div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    box-shadow: 7px 7px rgb(172, 172, 172);
+    animation: fadein 4s;
+}
+
+
+
+
+
+
+
+
+
+
+#bottom{
+    width: 100%;
+    height: 300px;
+   
+}
+
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
