@@ -24,13 +24,6 @@
     transition: ease-in-out 0.5s;
 }
 
-
-
-
-
-
-
-
 #name{
     font-size: 40px;
 }
@@ -40,6 +33,11 @@
 #name,#name_title{
     animation: fadein 2s ;
 }
+
+
+
+
+
 
 #mid{
     width: 100%;
