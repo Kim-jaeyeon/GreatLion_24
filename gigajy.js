@@ -7,7 +7,7 @@ const API_KEY="66978ab4b6f11f56b4864aede604a6c9";
 
 
 //2차원 배열로, 0번 벡터에는  일출~아침 플리, 1번 벡터에는 낮~일몰 전 플리, 2번은 일몰 중~초저녁, 3번은 저녁~늦은 밤 플리, 4번은 늦은 밤~새벽 플리가 들어있음.
-const musuc_list_for_time=[["playlists/morning/[20분]날씨 풀리기만을 기다려온 기분 좋은 봄 팝송 플레이리스트 - 6곡.mp3"],["playlists/day/Zeauxi - July on Film.mp3"],["playlists/sunset/Cigarettes After Sex - Sunsetz.mp3"],["playlists/night/Jeremy Zucker & Chelsea Cutler - This Is How You Fall In Love.mp3"],["playlists/dawn/Sydney Rose - Turning Page.mp3"]];
+const musuc_list_for_time=[["playlists/morning/기분 좋은 봄 팝송 플레이리스트 - 6곡.mp3"],["playlists/day/Zeauxi - July on Film.mp3"],["playlists/sunset/Cigarettes After Sex - Sunsetz.mp3"],["playlists/night/Jeremy Zucker & Chelsea Cutler - This Is How You Fall In Love.mp3"],["playlists/dawn/Sydney Rose - Turning Page.mp3"]];
 
 
 //12~2월:겨울 ->1

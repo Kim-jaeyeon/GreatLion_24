@@ -93,6 +93,7 @@
     animation: fadein 20s;
     text-shadow: 2px 2px gray;
     color: burlywood;
+    text-align: center;
     
 }
 #weatherInfo, #localInfo{
