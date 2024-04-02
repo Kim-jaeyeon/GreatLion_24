@@ -91,7 +91,7 @@ function onGeoOk(position){
             const cdimg=document.getElementById("cd_img");
             get_Time(data);
 
-            city.innerText="@"+data.name;
+            city.innerText="📍"+data.name;
             
             weather.innerText= `${data.weather[0].main} / ${data.main.temp}도`;
 

@@ -88,6 +88,10 @@
     width: 80%;
     height: 100px;
    margin-top: -300px;
+   background-color: gold;
+   border-radius: 20px;
+   animation: fadein 10s;
+   box-shadow: 0px 5px 20px rgb(255, 179, 0);
 
 }
 #sentenceBox{
@@ -125,7 +129,7 @@
     font-size: 25px;
     font-weight: 700;
     animation: fadein 10s;
-    color: gold;
+    color: white;
 }
 #sentence{
     font-size: 20px;
