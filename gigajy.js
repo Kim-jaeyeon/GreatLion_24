@@ -15,7 +15,11 @@ const musuc_list_for_time=[["playlists/morning/비 오는 날 아침에 듣는 �
 ["playlists/dawn/Sydney Rose - Turning Page.mp3"]];
 
 
-const img_list=[["playlists/morning/비 오는 날 아침에 듣는 감성 팝.png","playlists/morning/흐린 아침에 기분 째지는 국힙 알앤비.png"],["playlists/day/sam ock remember.jpeg","playlists/day/can i love.jpeg"],[],[],["playlists/dawn/turning page-sydney rose .jpeg"]];
+const img_list=[["playlists/morning/비 오는 날 아침에 듣는 감성 팝.png","playlists/morning/흐린 아침에 기분 째지는 국힙 알앤비.png","playlists/morning/기분 좋은 봄 플리.png"],
+["playlists/day/sam ock remember.jpeg","playlists/day/can i love.jpeg","playlists/morning/july in film.jpeg"],
+["playlists/sunset/sunsetz.png"],
+["playlists/night/this is how you fall in love.jpeg"],
+["playlists/dawn/turning page-sydney rose .jpeg"]];
 
 //12~2월:겨울 ->1
 //3~5:봄 ->2
@@ -132,41 +136,55 @@ function onGeoOk(position){
                     audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[1]}' autoplay loop></audio>`;
                     audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[1][2]}' autoplay loop></audio>`;
                     songname.innerText="Zeauxi - July on Film";
+                    cdimg.setAttribute('src',img_list[1][2]);
                 }
             }
             else if(timeset==2){
                 if(data.weather[0].main=="Rain"){
                     recommand.innerText="\"다음은 분명 밝은 날인 걸 우린 아니까.\"";
+                    audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[2]}' autoplay loop></audio>`;
+                    songname.innerText="Cigarettes After Sex - Sunsetz";
+                    cdimg.setAttribute('src',img_list[2][0]);
                 }
                 else if(data.weather[0].main=="Clouds"){
                     recommand.innerText="\"흐렸던 오늘 하루도 행복하게 마무리하는 중이길:)\"";
-                    audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[0]}' autoplay loop></audio>`;
-                    songname.innerText="[20분]날씨 풀리기만을 기다려온 기분 좋은 봄 팝송 플레이리스트 - 6곡";
+                    audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[2]}' autoplay loop></audio>`;
+                    songname.innerText="Cigarettes After Sex - Sunsetz";
+                    cdimg.setAttribute('src',img_list[2][0]);
                 }
                 else{
                     recommand.innerText="\"오늘 하루도 정말 수고 많았어요:)\"";
                     audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[2]}' autoplay loop></audio>`;
                     songname.innerText="Cigarettes After Sex - Sunsetz";
+                    cdimg.setAttribute('src',img_list[2][0]);
                 }
             }
             else if(timeset==3){
                 if(data.weather[0].main=="Rain"){
                     recommand.innerText="\"내일 아침은 많은 것들이 씻겨내려간 맑은 날이길!\"";
+                    audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[3]}' autoplay loop></audio>`;
+                    songname.innerText="Jeremy Zucker & Chelsea Cutler - This Is How You Fall In Love";
+                    cdimg.setAttribute('src',img_list[3][0]);
                 }
                 else if(data.weather[0].main=="Clouds"){
                     recommand.innerText="\"하늘도 몽글몽글해지는 밤인가봐요.\"";
-                    audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[0]}' autoplay loop></audio>`;
-                    songname.innerText="[20분]날씨 풀리기만을 기다려온 기분 좋은 봄 팝송 플레이리스트 - 6곡";
+                    audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[3]}' autoplay loop></audio>`;
+                    songname.innerText="Jeremy Zucker & Chelsea Cutler - This Is How You Fall In Love";
+                    cdimg.setAttribute('src',img_list[3][0]);
                 }
                 else{
                     recommand.innerText="\"부디 편안한 밤을 보내면 좋겠어요.\"";
                     audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[3]}' autoplay loop></audio>`;
                     songname.innerText="Jeremy Zucker & Chelsea Cutler - This Is How You Fall In Love";
+                    cdimg.setAttribute('src',img_list[3][0]);
                 }
             }
             else if(timeset==4){
                 if(data.weather[0].main=="Rain"&&data.main.temp<=0){
                     recommand.innerText="오늘은 비가오고 쌀쌀해요.\n 어울리는 노래를 들려드릴게요!";
+                    audio.innerHTML=`<audio id='audio' src='${musuc_list_for_time[4]}' autoplay loop></audio>`;
+                    songname.innerText="Sydney Rose - Turning Page";
+                    cdimg.setAttribute('src',img_list[4][0]);
                 }
                 else{
                     recommand.innerText="\"기나긴 이 밤, 아무런 걱정 말아요 그대.\"";
