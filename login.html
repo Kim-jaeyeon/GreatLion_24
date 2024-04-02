@@ -13,27 +13,33 @@
 
         <div id="mid">
             <form  method="get">
-                <table>
-                    <tr>
-                        <td><label for="username">이름</label></td>
-                        <td><input type="text" name="username" id="username" ></td>
-                    </tr>
-
-                    <tr>
-                        <td>성별</td>
-                        <td>
-                            <input type="radio" name="gender" id="man" value="m">
-                            <label for="man">남자</label>
-                            <input type="radio" name="gender" id="woman" value="w">
-                            <label for="woman">여자</label>
-                        </td>
-                    </tr>
-                </table>
-                <a href="index.html">
-                    <input type="button" value="가입">
+                <div id="idBox">
+                    <input name="id" type="text" placeholder="아이디를 입력하세요">
+                </div>
+                <div id="passwordBox">
+                    <input name="password" type="password" placeholder="비밀번호를 입력하세요">
+                </div>
+                <a id="loginBox" href="index1.html">
+                    <input id="loginBoxBtn" type="submit" value="로그인">
                 </a>
-                
             </form>
+
+            <div id="helper_div">
+
+                <div id="signup_div">
+                    <a href="">
+                        <p id="signup_text">회원가입하기</p>
+                    </a>
+                </div>
+
+                <div id="findId_div">
+                    <a href="">
+                        <p id="findId_text">아이디비번 찾기</p>
+                    </a>
+                </div>
+
+            </div>
+            
         </div>
 
 
